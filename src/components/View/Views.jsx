@@ -1,5 +1,5 @@
 import React from 'react';
-import './Views.css';
+import './views.css';
 const Views = ({ display, result }) => {
   return (
     <div className='container_display'>

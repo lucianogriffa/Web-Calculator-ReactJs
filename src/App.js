@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import Views from './components/Views';
-import Buttons from './components/Buttons';
+import Views from './components/View/Views';
+import Buttons from './components/Button/Buttons';
 import { evaluate } from 'mathjs';
 function App() {
   const [display, setDisplay] = useState([]);
