@@ -1,5 +1,5 @@
 .App {
-  background-color: black;
+  background-color: white;
   width: 100%;
   height: screen;
   display: flex;
@@ -9,4 +9,14 @@
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+.footer {
+  background-color: black;
+  color: white;
+  width: 300px;
+  margin-top: 5px;
+  text-align: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
 }

@@ -4,7 +4,7 @@ import Views from './components/Views';
 import Buttons from './components/Buttons';
 import { evaluate } from 'mathjs';
 function App() {
-  const [display, setDisplay] = useState('');
+  const [display, setDisplay] = useState([]);
   const addDisplay = (val) =>{
     setDisplay(display + val);  
   };
@@ -12,17 +12,21 @@ function App() {
     if (display){
       setDisplay(evaluate(display));
     } else {
-      alert('Ingrese valores para calcularlos')
+      alert('Enter values to calculate')
     }
   };
+  const cleanCharacter = () => {
+    setDisplay.splice()
+  }
+  console.log(display)
   return (
     <div className="App">
       <Views
         display={display}
       />
       <div>
-        <Buttons handlerClick={() => setDisplay('')}>AC</Buttons>
-        <Buttons handlerClick={addDisplay}>CE</Buttons>
+        <Buttons handlerClick={addDisplay}>(</Buttons>
+        <Buttons handlerClick={addDisplay}>)</Buttons>
         <Buttons handlerClick={addDisplay}>%</Buttons>
         <Buttons handlerClick={addDisplay}>/</Buttons>
       </div>
@@ -47,9 +51,12 @@ function App() {
       <div>
         <Buttons handlerClick={addDisplay}>0</Buttons>
         <Buttons handlerClick={addDisplay}>.</Buttons>
-        <Buttons handlerClick={calculateResult}>=</Buttons>
-        <Buttons handlerClick={addDisplay}>lg</Buttons>
+        <Buttons handlerClick={() => calculateResult()}>=</Buttons>
+        <Buttons handlerClick={() => setDisplay('')}>AC</Buttons>
       </div>
+      <footer className='footer'>
+        <p>© 2023 | by Luciano Griffa</p>
+      </footer>
     </div>
   );
 }
