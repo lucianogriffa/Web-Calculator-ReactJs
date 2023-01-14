@@ -15,9 +15,6 @@ function App() {
       alert('Enter values to calculate')
     }
   };
-  const cleanCharacter = () => {
-    setDisplay.splice()
-  }
   console.log(display)
   return (
     <div className="App">
