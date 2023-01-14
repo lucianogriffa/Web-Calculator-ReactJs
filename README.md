@@ -1,4 +1,8 @@
 # To Do App
+
+## Arithmetic Operators
+![image](https://user-images.githubusercontent.com/73656863/212461728-32355dec-808d-4f02-85f4-e6dc00ef5411.png)
+
 ## Technologies
 
 <div class="flex">
