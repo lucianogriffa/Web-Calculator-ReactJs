@@ -17,6 +17,6 @@
   margin-top: 5px;
   text-align: center;
   align-items: center;
-  border: none;
+  border: 2px solid green;
   border-radius: 10px;
 }
