@@ -1,0 +1,17 @@
+.buttonAc {
+  background-color: #616161;
+  width: 62px;
+  height: 60px;
+  padding: 6px 4px;
+  border-radius: 16px;
+  border: none;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+}

@@ -1,13 +1,13 @@
 import React from 'react';
-import './button.css';
-const Buttons = (props) => {
+import './buttonAc.css';
+const AllClean = (props) => {
   return (
     <button 
       onClick={() => props.handlerClick(props.children)}
-      className="button"
+      className="buttonAc"
     >
       {props.children}
     </button>
   )
 };
-export default Buttons;
+export default AllClean;
